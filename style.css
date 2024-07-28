@@ -1,0 +1,288 @@
+/* بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ   ﷺ  আমি পারবো না,কিন্তু আল্লাহ তায়া’লা চাইলে সব পারেন  */
+
+
+/* Global Css */ 
+
+
+*{
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  background: #171825; display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items:flex-start;
+}
+
+.css_Box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px solid #00000066;
+  height: 25px;
+  align-items: center;
+  margin: 0px 7px;
+  overflow:hidden;
+}
+
+.css_Box > p {
+  font-weight: 800px;
+  font-size: 14px;
+  width: 50%;
+  color: #000000;display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 9px;
+}
+
+.css_Box > input{
+  width:50%;
+  height: 97%;
+  background: none;
+  border: none;
+  border-left: 1px solid #00000066;
+  outline:none;
+  color: #000000;
+}
+
+
+.padding_box{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+ 
+  height: 24px;
+  margin: 4px 7px;
+}
+
+
+.padding_box > input {
+  background:transparent;
+  width: 22%;
+  border:none;
+  height: 100%;
+  outline: none;
+  color: #000000;
+  border:1px solid #00000066 ;
+}
+
+.margin_box{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+  height: 24px;
+  margin: 4px 7px;
+}
+
+.margin_box > input{
+  background:transparent;
+  width:  22%;
+  border:none;
+  height: 100%;
+  outline: none;
+  color: #000000;
+  border:1px solid #00000066;
+}
+
+
+/*SideBar Settings*/ 
+.sideBar{
+  background: #ffffff;
+  display: flex; 
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: center;
+  position: fixed;
+  top:0px;
+  left:0em;
+  width:18em;
+  min-height: 100vh;  
+  box-shadow: 0px 0px 7px rgba(7, 52, 175, 0.281);
+  z-index: 1000;
+  overflow-y: scroll;
+  overflow-wrap: anywhere;
+  overflow-inline: scroll;
+  scrollbar-width: none;
+ transition: all 0.5s ease-in-out;
+}
+
+.sideBar > .sidebar_Nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  background: #084baf;
+  height: 40px;
+  padding: 0px 19px;
+}
+
+.sideBar > .sidebar_Nav  > button{
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.sideBar > .sidebar_Nav  > button > i{
+  color: #fff;
+  font-size: 20.5px;
+  cursor: pointer;
+}
+
+
+.sideBarLayout {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+ flex-wrap: wrap;
+  width: 100%;
+  top: 50px;
+ position: absolute;
+ padding-bottom: 25px;
+
+}
+
+
+.sideBarLayout > div:not(.active) {
+  display: none;
+}
+
+
+
+
+.sideBarLayout > .active{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+
+.sideBarLayout >.market.active > div{
+  height: 5em;
+  border-radius: 9px; 
+  width: 5em;
+  border: 1px solid #FFFFFF70;
+  width:94%;
+  color: #fff;
+ display: flex;flex-direction: row;align-items: center; justify-content: center;
+}
+
+
+
+.sideBarLayout > .active > textarea{ 
+  background: transparent;
+  resize: none;
+  border-radius: 8px ; 
+  border: 1.3px solid #00000066;
+  height: 8em;
+ width: 244px;
+  outline: none;
+  padding: 8px;
+  margin: 0px 10px ;
+  margin-bottom: 5px;
+}
+
+.sideBarLayout > .active > b{
+  color: #000000e1;
+  margin: 3px 13px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+
+.sideBarLayout > .active > details{
+  color: #000000;
+  margin: 3px 13px;
+}
+
+
+
+.sideBarLayout > .active > details > span{
+  margin-bottom: 10px;
+}
+
+.sideBarLayout > .active > .padding_box  {
+  margin: 0px 5px;
+}
+
+.sideBarLayout > .active > .css_Box {
+  margin: 3px 13px;
+  width: 250px;
+
+}
+
+
+
+.sideBarLayout > .active > input {
+  width: 250px;
+  margin: 0px 11.7px;
+  padding: 7px;
+  outline: none;
+}
+
+.sideBarLayout > .market.active{
+  display: grid;
+  column-gap: 20px;
+  row-gap: 20px;
+  justify-content: center;
+  padding-top: 14px;
+  grid-template-columns: repeat(2, 0fr);
+  grid-template-rows:repeat(30, 0fr);  
+  margin-top: 9px;
+  height: 80vh;
+  box-shadow: 0px 0px 7px rgba(7, 52, 175, 0.281);
+border-radius: 8px;
+  width: 90%;
+}
+
+
+.sideBarLayout > .market.active > div {
+  width: 100px;
+  height: 60px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 7px rgba(7, 52, 175, 0.281);
+  color: #000;
+  cursor: pointer;
+}
+
+.sideBarLayout > .market.active > div:hover{
+  transform: scale(103%, 103%);
+  transition: all 0.2s ease-in;
+}
+
+/* Page Setttings */
+
+#page {
+  max-height:6000vh ;
+  min-height: 100vh;
+  background: white;
+  width: 943px;
+  transition: all 0.5s ease-in-out;
+}
+
+#page > section{
+ 
+ 
+transition: all 0.05s ease;
+ width:100%;
+ background: rgb(251, 255, 246);
+min-height: 60px;
+ 
+}
+
+
+ section:hover {
+  border: 5px dotted rgba(14, 14, 240, 0.781);
+
+}
+

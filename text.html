@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Test Mubentor</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <span class="sideBar">
+
+
+        <div class="sidebar_Nav">
+         <button class="plus_Btn" > 
+          <i  class="fa-solid fa-plus">
+          </i>
+        </button>
+        <button  style="cursor: pointer;" id="completeBtn">
+          <i class="fa-solid fa-check"></i></button>  
+         
+        </div>
+        <div id="sideBarLayout" TargetedElementId="12345678910" class="sideBarLayout">
+          
+          <div id="edditSection"  class="edditSection active" >
+              <div  >
+                Heading
+              </div>
+               <div >
+                 button
+               </div>
+              <div >
+                image
+              </div >
+              <div  >
+                  paragraph
+              </div>
+             
+              <div >
+                icon
+              </div>
+              <div >
+                video
+              </div>
+              <div>
+                form 
+              </div>
+        
+        
+        
+          </div>
+          
+          
+    
+          <!-- For Ediiting H1,h2,h3,h4,h5,h6  -->
+          <div id="editHeading" class="editHeading">
+           
+         
+
+          
+        
+           <b>Content</b>
+          <textarea autocomplete="off"  placeholder="Enter the Heading"  name="Heading" id="content"></textarea>
+          <b>Design</b>
+          <span class="css_Box bg_color_div active" id="bg_color_div">
+            <p> BG Color</p>
+            <input id="bg_color"  placeholder="green" value=""    type="text">
+      </span>
+      <span class="css_Box font_color_div active" id="f_color_div">
+       <p>Color</p>
+       <input id="font_color"    placeholder="white" value=""   type="text">
+      </span>
+      <div class="css_Box">
+        <p>Width</p><input type="text" value=""  name="" id="width">
+      </div>
+      <div class="css_Box">
+        <p>heigth</p><input type="text" name="" id="height">
+      </div>
+          <b>Fonts</b>
+         
+          <span class="css_Box fobt_size_div active" id="f_size_div">
+              <p>size</p>
+              <input id="font_size"  placeholder="px" value=""   type="number">
+          </span>
+          <span class="css_Box fobt_weight_div active" id="font_weight_div">
+              <p>weight</p>
+              <input id="fw"  placeholder="px" value=""   type="number">
+          </span>
+           <span class="css_Box line_spacing_div active" id="line_spacing_div">
+             <p>Word spacine</p>
+             <input id="word_spacine"  placeholder="px" value=""   type="number">
+           </span>
+           <span class="css_Box text_align_div active"id="text_align_div">
+             <p> Align</p>
+             <input id="text_align"  placeholder="center" value=""   type="text">
+           </span>
+         
+          <b> Padding </b>
+          <div class="padding_box">
+            <input  placeholder="px" value=""  id="pd_t" type="number">
+            <input  placeholder="px" value=""  id="pd_r" type="number">
+            <input   placeholder="px" value="" id="pd_b" type="number">
+            <input  placeholder="px" value=""  id="pd_l" type="number">
+          </div>
+            <b> margin </b>
+            
+            
+            <div class="margin_box">
+              <input  placeholder="px" value="" id="mt" type="number">
+              <input placeholder="px" value=""  placeholder="px" value=""   id="mr" type="number">
+              <input placeholder="px" value=""   id="mb" type="number">
+              <input placeholder="px" value=""   id="ml" type="number">
+            </div>
+             <b>Border</b>     
+             
+             
+             <div id="b_box" class="padding_box">
+                <input placeholder="px" value="" id="bt" type="number">
+                  <input placeholder="px" value="" id="br" type="number">
+                  <input placeholder="px" value=""  id="bb" type="number">
+                  <input placeholder="px" value=""  id="bl" type="number">
+         
+           </div>
+           <b>Border Radius</b>
+<div id="br_box" class="padding_box">
+             <input placeholder="px" value="" id="brt" type="number">
+             <input placeholder="px" value="" id="brr" type="number">
+             <input placeholder="px" value=""  id="brb" type="number">
+             <input placeholder="px" value=""  id="brl" type="number">
+           </div>
+
+
+
+          </div>
+            <!-- For Ediiting Button -->
+          <div class="editButton">
+            <b>Content</b>
+            <textarea autocomplete="off" name="button_content" value="" id="content"></textarea>
+
+            <b>Design</b>
+            <span class="css_Box bg_color_div active" id="bg_color_div">
+                <p> BG Color</p>
+                <input id="bg_color" value=""  type="text">
+          </span>
+          <span class="css_Box font_color_div active" id="f_color_div">
+           <p>Color</p>
+           <input id="font_color" value=""  type="text">
+          </span>
+          <div class="css_Box">
+            <p>Width</p><input type="text" value=""  name="" id="width">
+          </div>
+          <div class="css_Box">
+            <p>heigth</p><input type="text" name="" id="height">
+          </div>
+
+            <b>Fonts</b>
+     
+            
+            <span class="css_Box fobt_size_div active" id="f_size_div">
+                <p>size</p>
+                <input id="font_size" value="" type="number">
+            </span>
+            
+            <span class="css_Box fobt_weight_div active" id="font_weight_div">
+                <p>weight</p>
+                <input id="fw" value="" type="number">
+            </span>
+             <span class="css_Box line_spacing_div active" id="line_spacing_div">
+               <p>Word spacine</p>
+               <input id="word_spacine" value="" type="number">
+             </span>
+             <span class="css_Box text_align_div active" id="text_align_div">
+               <p> Align</p>
+               <input id="text_align" value="" type="text">
+             </span>
+         
+            <b> Padding </b>
+            <div class="padding_box">
+              <input value="" placeholder="px"  id="pd_t" type="number">
+              <input value=""  placeholder="px" id="pd_r" type="number">
+              <input value="" placeholder="px" id="pd_b" type="number">
+              <input value="" placeholder="px" id="pd_l" type="number">
+            </div>
+              <b> margin </b>
+              <div class="margin_box">
+                <input value=""  placeholder="px" id="mt" type="number">
+                <input value=""  placeholder="px" id="mr" type="number">
+                <input value="" placeholder="px"  id="mb" type="number">
+                <input value=""  placeholder="px" id="ml" type="number">
+              </div>
+              <b>Border</b>
+              <div id="b_box" class="padding_box">
+               <input placeholder="px" value="" id="bt" type="number">
+                 <input placeholder="px" value="" id="br" type="number">
+                 <input placeholder="px" value=""  id="bb" type="number">
+                 <input placeholder="px" value=""  id="bl" type="number">
+             </div>
+             <b>Border Radius</b>
+             <div id="br_box" class="padding_box">
+               <input placeholder="px" value="" id="brt" type="number">
+               <input placeholder="px" value="" id="brr" type="number">
+               <input placeholder="px" value=""  id="brb" type="number">
+               <input placeholder="px" value=""  id="brl" type="number">
+             </div>
+          </div>
+          <!--  For Ediiting Image  -->
+          <div class="editImage">
+            <b > link</b>
+            <input class="link_input"   type="text" name="" id="image_link">
+    
+           <b>Fonts </b>
+            <span  class="css_Box">
+              <p>Width</p>
+              <input type="text" name="" id="width">
+            </span>
+          <span  class="css_Box">
+               <p>height</p>
+               <input type="text" name="" id="height">
+             </span>
+              
+          <b> Padding </b>
+          <div class="padding_box">
+            <input id="pd_t" type="number">
+            <input id="pd_r" type="number">
+            <input id="pd_b" type="number">
+            <input id="pd_l" type="number">
+          </div>
+              <b > margin </b>
+              <div class="margin_box">
+                <input id="mt" type="number">
+                <input id="mr" type="number">
+                <input id="mb" type="number">
+                <input id="ml" type="number">
+              </div>
+              <b>Border</b>
+             <div id="b_box" class="padding_box">
+              <input placeholder="px" value="" id="bt" type="number">
+                <input placeholder="px" value="" id="br" type="number">
+                <input placeholder="px" value=""  id="bb" type="number">
+                <input placeholder="px" value=""  id="bl" type="number">
+            </div>
+            <b>Border Radius</b>
+            <div id="br_box" class="padding_box">
+              <input placeholder="px" value="" id="brt" type="number">
+              <input placeholder="px" value="" id="brr" type="number">
+              <input placeholder="px" value=""  id="brb" type="number">
+              <input placeholder="px" value=""  id="brl" type="number">
+            </div>
+          </div>
+          <!-- For Ediiting Paragraph-->
+           
+           <div class="editParagraph">
+         
+
+           
+         
+
+          
+        
+            <b>Content</b>
+           <textarea autocomplete="off"  placeholder="Enter the Heading"  name="Heading" id="content"></textarea>
+           <b>Design</b>
+           <span class="css_Box bg_color_div active" id="bg_color_div">
+             <p> BG Color</p>
+             <input id="bg_color"  placeholder="green" value=""    type="text">
+       </span>
+       <span class="css_Box font_color_div active" id="f_color_div">
+        <p>Color</p>
+        <input id="font_color"    placeholder="white" value=""   type="text">
+       </span>
+       <div class="css_Box">
+        <p>Width</p><input type="text" value=""  name="" id="width">
+      </div>
+      <div class="css_Box">
+        <p>heigth</p><input type="text" name="" id="height">
+      </div>
+           <b>Fonts</b>
+          
+           <span class="css_Box fobt_size_div active" id="f_size_div">
+               <p>size</p>
+               <input id="font_size"  placeholder="px" value=""   type="number">
+           </span>
+           <span class="css_Box fobt_weight_div active" id="font_weight_div">
+               <p>weight</p>
+               <input id="fw"  placeholder="px" value=""   type="number">
+           </span>
+            <span class="css_Box line_spacing_div active" id="line_spacing_div">
+              <p>Word spacine</p>
+              <input id="word_spacine"  placeholder="px" value=""   type="number">
+            </span>
+            <span class="css_Box text_align_div active"id="text_align_div">
+              <p> Align</p>
+              <input id="text_align"  placeholder="center" value=""   type="text">
+            </span>
+          
+           <b> Padding </b>
+           <div class="padding_box">
+             <input  placeholder="px" value=""  id="pd_t" type="number">
+             <input  placeholder="px" value=""  id="pd_r" type="number">
+             <input   placeholder="px" value="" id="pd_b" type="number">
+             <input  placeholder="px" value=""  id="pd_l" type="number">
+           </div>
+             <b> margin </b>
+             
+             
+             <div class="margin_box">
+               <input  placeholder="px" value="" id="mt" type="number">
+               <input placeholder="px" value=""  placeholder="px" value=""   id="mr" type="number">
+               <input placeholder="px" value=""   id="mb" type="number">
+               <input placeholder="px" value=""   id="ml" type="number">
+             </div>
+              <b>Border</b>     
+              
+              
+              <div id="b_box" class="padding_box">
+                 <input placeholder="px" value="" id="bt" type="number">
+                   <input placeholder="px" value="" id="br" type="number">
+                   <input placeholder="px" value=""  id="bb" type="number">
+                   <input placeholder="px" value=""  id="bl" type="number">
+          
+            </div>
+            <b>Border Radius</b>
+ <div id="br_box" class="padding_box">
+              <input placeholder="px" value="" id="brt" type="number">
+              <input placeholder="px" value="" id="brr" type="number">
+              <input placeholder="px" value=""  id="brb" type="number">
+              <input placeholder="px" value=""  id="brl" type="number">
+            </div>
+ 
+ 
+ 
+           </div>
+          <!-- For Ediiting icon -->
+          <div class="editIcon">
+            <span class="css_Box">
+              <p>Icons</p>    <select onselect="" name="" id="Icon_select_value">
+                    <option value="facebook">Facebook</option>
+                    <option value="Twiter">Twiter</option>
+                    <option value="Google">Google</option>
+                  </select>
+            </span>
+          <span class="css_Box">
+            <p>Size</p>
+            <input id="size" placeholder="px" type="text">
+          </span>
+          <span class="css_Box">
+            <p>color</p>
+            <input id="color" placeholder="px" type="text">
+          </span>
+    
+          <b> Padding </b>
+          <div class="padding_box">
+            <input  placeholder="px" value=""  id="pd_t" type="number">
+            <input  placeholder="px" value=""  id="pd_r" type="number">
+            <input   placeholder="px" value="" id="pd_b" type="number">
+            <input  placeholder="px" value=""  id="pd_l" type="number">
+          </div>      <b> margin </b>
+            <div class="margin_box">
+                <input  placeholder="px" value="" id="mt" type="number">
+                <input placeholder="px" value=""  placeholder="px" value=""   id="mr" type="number">
+                <input placeholder="px" value=""   id="mb" type="number">
+                <input placeholder="px" value=""   id="ml" type="number">
+            </div> 
+            <b>Border</b>
+             <div id="b_box" class="padding_box">
+              <input placeholder="px" value="" id="bt" type="number">
+                <input placeholder="px" value="" id="br" type="number">
+                <input placeholder="px" value=""  id="bb" type="number">
+                <input placeholder="px" value=""  id="bl" type="number">
+            </div>
+            <b>Border Radius</b>
+            <div id="br_box" class="padding_box">
+              <input placeholder="px" value="" id="brt" type="number">
+              <input placeholder="px" value="" id="brr" type="number">
+              <input placeholder="px" value=""  id="brb" type="number">
+              <input placeholder="px" value=""  id="brl" type="number">
+            </div>
+          </div>
+          
+    
+        <div class="editVideo">
+         
+    
+          <b> link</b>
+          <input autocomplete="off" class="link_input"   type="text" name="" id="image_link">
+    
+         <b>Fonts </b>
+          <span style="margin-bottom: 8px;" class="css_Box">
+            <p>Width</p>
+            <input type="text" name="" id="width">
+          </span>
+        <span style="margin-bottom: 8px;" class="css_Box">
+             <p>height</p>
+             <input type="text" name="" id="height">
+           </span>
+            
+        <b > Padding </b>
+        <div class="padding_box">
+          <input id="pd_t" type="number">
+          <input id="pd_r" type="number">
+          <input id="pd_b" type="number">
+          <input id="pd_l" type="number">
+        </div>
+            <b > margin </b>
+            <div class="margin_box">
+              <input id="mt" type="number">
+              <input id="mr" type="number">
+              <input id="mb" type="number">
+              <input id="ml" type="number">
+            </div>
+            <b>Border</b>
+             <div id="b_box" class="padding_box">
+              <input placeholder="px" value="" id="bt" type="number">
+                <input placeholder="px" value="" id="br" type="number">
+                <input placeholder="px" value=""  id="bb" type="number">
+                <input placeholder="px" value=""  id="bl" type="number">
+            </div>
+            <b>Border Radius</b>
+            <div id="br_box" class="padding_box">
+              <input placeholder="px" value="" id="brt" type="number">
+              <input placeholder="px" value="" id="brr" type="number">
+              <input placeholder="px" value=""  id="brb" type="number">
+              <input placeholder="px" value=""  id="brl" type="number">
+            </div>
+            </div>
+    
+    
+        </div>
+          
+      </span>
+      
+
+
+      <div dropzone="true"id="page"> <section id="12345678910"></section></div>
+</body>
+<script type="module" src="script.js"></script>
+</html>
